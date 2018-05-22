@@ -1,0 +1,268 @@
+@charset "utf-8";
+/*shortCut*/
+#shortCut{
+    width:100%;
+    height:31px;
+    /* background: #333377; */
+    background: #f1f1f1;
+}
+.shortCut1{
+    width:990px;
+    height:30px;
+    margin:0 auto;
+    background: #f1f1f1;
+    /* background: lightcyan; */
+}
+.fl{
+    width:97px;
+    height:30px;
+    float:left;
+    /* background: bisque; */
+}
+.fl li .fl-li-div1{
+    position: relative;
+    float: left;
+    width:97px;
+    height:30px;
+    line-height: 30px;
+}
+.i-right{
+    position: absolute;
+    float: left;
+    top:10px;
+    
+    height:7px;
+    overflow: hidden;
+    font:400 15px/15px consolas;
+    transition: transform .1s ease-in 0s;
+}
+.i-right s{
+    width:15px;
+    height:15px;
+}
+
+.fr{
+    width:798px;
+    height:30px;
+    float:right;
+    /* background: aquamarine; */
+
+}
+.fr li{
+    float:left;
+    line-height: 30px;
+    text-align: center;
+}
+
+.fr .fr-li1{
+    width:131px;
+    height:30px;
+    margin-right:10px;
+}
+.fr .fr-li1 .reg{
+    color:#c81623;
+    width:48px;
+}
+.fr .fr-li2{
+    width:68px;
+    height:30px;
+}
+.fr .fr-li3{
+    width:86px;
+    height:30px;
+}
+.fr .fr-li4{
+    width:68px;
+    height:30px;
+}
+.fr .fr-li5{
+    width:68px;
+    height:30px;
+}
+.fr .fr-li6{
+    width:102px;
+    height:30px;
+}
+.fr .fr-li7{
+    width:86px;
+    height:30px;
+}
+.fr .fr-li8{
+    width:86px;
+    height:30px;
+}
+.fr .fr-li9{
+    width:85px;
+    height:30px;
+}
+.fr  .spacer{
+    margin-top:9px;
+    width:1px;
+    height:12px;
+    background: #CCC;   
+
+}
+
+
+
+/*header*/
+#header{
+    width:100%;
+    height:100px;
+    background: white;
+}
+
+.header1{
+    width:990px;
+    height:100px;
+    /* background: peachpuff; */
+    margin:0 auto;
+    position: relative;
+}
+.logo{
+    width:362px;
+    height:100px;
+    background: url(../images-1/jdlogo-201708-@1x.png) no-repeat 0 0;
+    float: left;
+    z-index: 2;
+    margin-top:20px;
+}
+.logo a{
+    width:270px;
+    height:60px;
+    
+    display: inline-block;
+}
+
+.search-form{
+    position: relative;
+    float: left;
+    width:462px;
+    height:36px;
+    margin-top:25px;
+    background:white;
+    
+    padding:0;
+    border:0;
+    /* margin-top:35px; */
+}
+.search-form-text{
+    float: left;
+    width:370px;
+    height:24px;
+    line-height: 24px;
+    color:#666;
+    padding:4px;
+    margin-bottom:4px;
+    border-width:2px 0 2px 2px;
+    border-color: #b61d1d;
+    border-style:solid;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    /* background:lightblue; */
+}
+
+.search-btn{
+    width:82px;
+    height:36px;
+    float:left;
+    border:none;
+    background:#b61d1d;
+    font-size:16px;
+    font-family: "Microsoft YaHei";
+    color:white;
+    text-align: center;
+}
+.shoppingCart{
+    margin-top:25px;
+    width:141px;
+    height:35px;
+    float:right;
+    background: #f9f9f9;
+    line-height: 35px;
+    text-align: center;
+    position:relative;
+    
+}
+.cart-icon{
+    position: absolute;
+    left:35px;
+    top:8px;
+    width:16px;
+    height:16px;
+    margin-right:3px;
+    background: url(../images/cart_09.jpg) no-repeat;
+}
+.cart-li1{
+    margin:0 auto;
+    text-align: center;
+    color:#666666;
+    width:60px;
+    height:16px;
+    line-height: 16px;
+}
+.hotwords{
+    width:462px;
+    height:20px;
+    float: left;
+    /* background:khaki; */
+
+}
+.hotwords a{
+    text-align: center;
+    height:20px;
+    line-height: 20px;
+    margin-right:10px;
+    color:#666;
+}
+.hotwords a:hover{
+    color: #c81623;
+}
+.hotwords .hotw-a1{
+    color: #c81623;
+}
+
+/*nav*/
+#nav{
+    height:44px;
+    width:100%;
+    border-bottom:2px solid #B1191A;
+}
+.nav1{
+    width:990px;
+    height:44px;
+    margin:0 auto;
+    background: brown;
+}
+.allList{
+    width:210px;
+    height:44px;
+    background: #B1191A;
+}
+.w{
+    height:44px;
+}
+.w-i{
+    font-size:16px;
+    color:white;
+    height:44px;
+    /* line-height: 44px; */
+}
+.listRight{
+    width: 830px;
+    height:44px;
+   float: left;
+    background: lightcyan;
+}
+.group1{
+    width:325px;
+    height:44px;
+    /* background: lightpink; */
+    float: left; 
+}
+.group2{
+    width:295px;
+    height:44px;
+    /* background: lightblue; */
+    float: left; 
+}
