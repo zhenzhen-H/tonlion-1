@@ -509,3 +509,146 @@
     height:281px;
     
 }
+
+
+
+/*login && register*/
+
+#overlay{
+    margin:0;
+    padding:0;
+    border:none;
+    width:100%;
+    height:100%;
+    background:rgb(51,51,51);
+    opacity:0.6;
+    z-index:9999;
+    position:fixed;
+    top:0;
+    left:0;
+}
+#easyDialog{
+    margin:-130px 0px 0px -230px;
+    padding:0;
+    border:none;
+    z-index:10000;
+    position: fixed;
+    top:50%;
+    left:50%;
+}
+.loginBox{
+    background: rgb(255,255,255);
+    border:7px solid rgb(50,50,50);
+    width:446px;
+    padding-top:8px;
+    margin-bottom:30px;
+    position: relative;
+    /* display: none; */
+}
+.loginBox a{
+    outline:none;
+    border:0px;
+    color:#575556;
+    text-decoration: none;
+}
+.gb{
+    background: url("../images/login.png") no-repeat 0px -201px;
+    top:0px;
+    width:25px;
+    height:25px;
+    right:0px;
+    position: absolute;
+    cursor: pointer;
+}
+.selected0{
+    background: url("../images/login.png") no-repeat 0px 0px;
+}
+.nav0{
+    background: url("../images/login.png") no-repeat -107px 0px;
+}
+.login .log_box li{
+    width:107px;
+    height:30px;
+    float:left;
+    cursor: pointer;
+}
+.log_box {
+    width:411px;
+    height:32px;
+    border-bottom-color:rgb(222,222,222);
+    border-bottom-width:1px;
+    border-bottom-style:dashed;
+    margin-left:15px;   
+    display: block;
+}
+.nav1{
+    background: url("../images/login.png") no-repeat 0px -32px;
+}
+.log_form{
+    margin:38px 0px 0px 60px;
+}
+table{
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+tbody{
+    display:table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr{
+    display:table-row;
+    vertical-align: inherit;
+    border-color:inherit;
+}
+th{
+    padding:5px;
+    text-align: right;
+    padding-top:10px;
+    vertical-align: top;
+    margin:0;
+}
+.text_name{
+    border:1px solid rgb(204,204,204);
+    width:170px;
+    height:25px;
+    padding-top:5px;
+    padding-left:5px;
+}
+.login input{
+    cursor: default;
+    margin:3px 3px 3px 4px;
+    font:400 13.3333px Arial;
+}
+.log_form th{
+    text-align: right;
+    padding-top:10px;
+}
+.log_form td{
+    text-align: left;
+    padding:5px;
+    vertical-align: top;
+}
+.button{
+    border:currentColor;
+    width:83px;
+    height:32px;
+    color:rgb(255,255,255);
+    line-height: 24px;
+    font-size:14px;
+    font-weight: bold;
+    float: left;
+    cursor: pointer;
+}
+.mm{
+    line-height:24px;
+    margin-left:10px;
+    float:left;
+    display: inline;
+}
+.mm:hover{
+    color:#eabc57;
+    text-decoration: underline;
+}

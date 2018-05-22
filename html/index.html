@@ -353,7 +353,7 @@
     <div class="pContent">
             <div class="panes1">
                     <div class="pane">
-                        <div class="pure-1">
+                    <div class="pure-1">
                             <div class="pure-2">
                                     <ul>
                                         <li>
@@ -536,7 +536,102 @@
                     </div>                        
             </div>
     </div>
-    <iframe src="foot.html" width="100%" height="281" ></iframe>
+    <iframe src="foot.html" width="1280" height="281" ></iframe>
+    <div id="overlay" style="display:none"></div>
+    <div id="easyDialog"  style="display:none">
+        <div class="loginBox">
+            <a href="">
+                <div class="gb"></div>
+            </a>
+            <div class="login">
+                <ul class="log_box">
+                    <li class="nav0 selected0" id="log_box_li0" onclick="LI0(0)"></li>
+                    <li class="nav1" id="log_box_li1" onclick="LI0(1)"></li>
+                </ul>
+                <div class="tab_block" style="display:none">
+                    <form action="post" name="pl_form_popup_login" id="pl_form_popup_login">
+                        <table class="log_form">
+                            <tbody>
+                                <tr>
+                                    <th>账户名：</th>
+                                    <td>
+                                        <input type="text" name="user_name" class="text_name" id="username" autocomplete="off">
+                                        <span id="p1-user_name_info"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                        <th>密码：</th>
+                                        <td>
+                                            <input type="password"  class="text_name" id="passwd" name="password">
+                                            <span id="p1-password1_info"></span>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <th>&nbsp;</th>
+                                        <td>
+                                            <input type="checkbox"  class="che" checked="checked" value="1">
+                                            <b>7天内免登录</b>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <th>&nbsp;</th>
+                                        <td>
+                                            <input type="button"  class="button d1" onclick="login_submit" value="登录">
+                                            <a href="" class="mm"> 忘记密码？</a>
+                                        </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class="tab_block">
+                        <form action="post" name="pl_form_popup_register" method="post">
+                            <table class="log_form">
+                                    <tbody>
+                                            <tr>
+                                                <th>账户名：</th>
+                                                <td>
+                                                    <input type="text" name="user_name" class="text_name" id="username" >
+                                                    <span id="p1-user_name_info"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                    <th>设置密码：</th>
+                                                    <td>
+                                                        <input type="password"  class="text_name" id="passwd" name="password">
+                                                        <span id="p1-password1_info"></span>
+                                                    </td>
+                                            </tr>
+                                            <tr>
+                                                    <th>确认密码：</th>
+                                                    <td>
+                                                        <input type="password"  class="text_name" id="passwd" name="password">
+                                                        <span id="p1-password1_info"></span>
+                                                    </td>
+                                            </tr> 
+                                            <tr>
+                                                    <th>&nbsp;</th>
+                                                    <td>
+                                                        <input type="button"  class="button d1" onclick="login_submit" value="注册">
+                                                        
+                                                    </td>
+                                            </tr>
+                                            <tr>
+                                                    <th>&nbsp;</th>
+                                                    <td>
+                                                        <input type="checkbox"  id="agreement" name="agreement" checked="checked" value="1">
+                                                        <b> 我已看过并接受《<a href="">用户协议</a>》</b>
+                                                        
+                                                    </td>
+                                            </tr>
+                                        </tbody>
+                            </table>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 <script src="../js/index.js"></script>   
 </html>
