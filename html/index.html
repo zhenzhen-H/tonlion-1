@@ -19,8 +19,8 @@
                 <ul class="h-top1-ul2">
                         <li class="h-top1-li1">
                             <span>您好，欢迎来到唐狮购物商城！【</span>
-                            <a href="#" class="h-top1-a1">登录&nbsp;|</a>
-                            <a href="#" class="h-top1-a2">注册&nbsp;|</a>
+                            <a href="javascript:" class="h-top1-a1" >登录&nbsp;|</a>
+                            <a href="javascript:" class="h-top1-a2">注册&nbsp;|</a>
                             <a href="#" class="h-top1-a3"><img class="h-top1-img1" src="../picture/qq_login.png"/></a>
                             <span>】</span>
                         </li>
@@ -160,7 +160,7 @@
     <div class="pContent">
         <div class="panes1">
             <div class="pane">
-                    <div class="pure-1">
+                    <!-- <div class="pure-1">
                             <div class="pure-2">
                                     <ul>
                                         <li>
@@ -339,7 +339,7 @@
                                 </ul>
                         </div>  
                         
-                    </div>
+                    </div> -->
                 
                     
                     
@@ -353,7 +353,7 @@
     <div class="pContent">
             <div class="panes1">
                     <div class="pane">
-                    <div class="pure-1">
+                    <!-- <div class="pure-1">
                             <div class="pure-2">
                                     <ul>
                                         <li>
@@ -532,7 +532,7 @@
                                 </ul>
                         </div>  
                         
-                    </div>
+                    </div> -->
                     </div>                        
             </div>
     </div>
@@ -545,24 +545,24 @@
             </a>
             <div class="login">
                 <ul class="log_box">
-                    <li class="nav0 selected0" id="log_box_li0" onclick="LI0(0)"></li>
-                    <li class="nav1" id="log_box_li1" onclick="LI0(1)"></li>
+                    <li class="nav0 " id="log_box_li0" "></li>
+                    <li class="nav1" id="log_box_li1" "></li>
                 </ul>
-                <div class="tab_block" style="display:none">
-                    <form action="post" name="pl_form_popup_login" id="pl_form_popup_login">
+                <div class="tab_block tab_login" >
+                    <!-- <form action="hanyu-user.php" method="post" name="pl_form_popup_login" id="pl_form_popup_login"> -->
                         <table class="log_form">
                             <tbody>
                                 <tr>
                                     <th>账户名：</th>
                                     <td>
-                                        <input type="text" name="user_name" class="text_name" id="username" autocomplete="off">
+                                        <input type="text" name="username" class="text_name_log"  autocomplete="off">
                                         <span id="p1-user_name_info"></span>
                                     </td>
                                 </tr>
                                 <tr>
                                         <th>密码：</th>
                                         <td>
-                                            <input type="password"  class="text_name" id="passwd" name="password">
+                                            <input type="password"  class="text_pwd_log" name="password">
                                             <span id="p1-password1_info"></span>
                                         </td>
                                 </tr>
@@ -576,44 +576,45 @@
                                 <tr>
                                         <th>&nbsp;</th>
                                         <td>
-                                            <input type="button"  class="button d1" onclick="login_submit" value="登录">
-                                            <a href="" class="mm"> 忘记密码？</a>
+                                            <!-- <input type="button"  class="button d1"  value="登录"> -->
+                                            <button class="button d1 btn-login">登录</button>
+                                            <a href="" class="mm">忘记密码？</a>
                                         </td>
                                 </tr>
                             </tbody>
                         </table>
-                    </form>
+                    <!-- </form> -->
                 </div>
-                <div class="tab_block">
-                        <form action="post" name="pl_form_popup_register" method="post">
+                <div class="tab_block tab_register" style="display:none">
+                        <!-- <form action="hanyu-user.php" name="pl_form_popup_register" method="post"> -->
                             <table class="log_form">
                                     <tbody>
                                             <tr>
                                                 <th>账户名：</th>
                                                 <td>
-                                                    <input type="text" name="user_name" class="text_name" id="username" >
+                                                    <input type="text" name="user_name" class="text_name_reg"  >
                                                     <span id="p1-user_name_info"></span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                     <th>设置密码：</th>
                                                     <td>
-                                                        <input type="password"  class="text_name" id="passwd" name="password">
+                                                        <input type="password"  class="text_pwd_reg"  name="password">
                                                         <span id="p1-password1_info"></span>
                                                     </td>
                                             </tr>
-                                            <tr>
+                                            <!-- <tr>
                                                     <th>确认密码：</th>
                                                     <td>
-                                                        <input type="password"  class="text_name" id="passwd" name="password">
+                                                        <input type="password"  class="text_name"  name="password">
                                                         <span id="p1-password1_info"></span>
                                                     </td>
-                                            </tr> 
+                                            </tr>  -->
                                             <tr>
                                                     <th>&nbsp;</th>
                                                     <td>
-                                                        <input type="button"  class="button d1" onclick="login_submit" value="注册">
-                                                        
+                                                        <!-- <input type="button"  class="button d1" onclick="login_submit" value="注册"> -->
+                                                        <button class="button d1 btn-register">注册</button>
                                                     </td>
                                             </tr>
                                             <tr>
@@ -626,7 +627,7 @@
                                             </tr>
                                         </tbody>
                             </table>
-                        </form>
+                        <!-- </form> -->
                 </div>
             </div>
         </div>

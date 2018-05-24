@@ -560,8 +560,14 @@
     position: absolute;
     cursor: pointer;
 }
-.selected0{
+.login .log_box .selected1{
+    background: url("../images/login.png") no-repeat -107px -32px;
+}
+.login .log_box .selected0{
     background: url("../images/login.png") no-repeat 0px 0px;
+}
+.nav1{
+    background: url("../images/login.png") no-repeat 0px -32px;
 }
 .nav0{
     background: url("../images/login.png") no-repeat -107px 0px;

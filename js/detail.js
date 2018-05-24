@@ -1,4 +1,5 @@
 $(function(){
+	//放大镜
     function Magnifier(options){
 		this.small_ele = $(options.small_ele);
 		this.focus_ele = $(options.focus_ele);
@@ -154,6 +155,44 @@ $(function(){
 		small_ele:".small",
 		focus_ele:".grayBox",
 		big_ele:".big"
-	})
+	});
+
+	//商品详情与评论的切换
+	function change(){
+		// alert(1);
+		this.tab1=$(".tab1");
+		this.tab2=$(".tab2");
+		this.detail=$(".detail");
+		this.comment=$(".comment");
+		// console.log(this.detail,this.comment);
+		this.init();
+	}
+	change.prototype={
+		constructor:change,
+		init(){
+			this.changeToDel();
+		},
+		//切换到详情
+		changeToDel(){
+			this.tab1.css({"display":"block"});
+			this.tab2.css({"display":"none"});
+			this.comment.removeClass("active");
+			this.detail.addClass("active");
+			this.comment.on("click",function(){
+				this.changeToCom();
+			}.bind(this))
+		},
+		//切换到评论
+		changeToCom(){
+			this.tab1.css({"display":"none"});
+			this.tab2.css({"display":"block"});
+			this.detail.removeClass("active");
+			this.comment.addClass("active");
+			this.detail.on("click",function(){
+				this.changeToDel();
+			}.bind(this))
+		}
+	}
+	new change();
 
 })

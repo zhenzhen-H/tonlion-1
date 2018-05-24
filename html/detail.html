@@ -134,11 +134,11 @@
             <div style="clear:both"></div>
             <div class="main-col clearfix">
                 <ul class="tabTel">
-                    <li class="active">商品详情</li>
-                    <li>商品评论</li>
+                    <li class="active detail" >商品详情</li>
+                    <li class="comment">商品评论</li>
                 </ul>
                 <div class="content">
-                    <div class="tabInner">
+                    <div class="tabInner tab1" >
                         <div class="inner-btn" style="text-align:center;">
                             <p>&nbsp;</p>
                             <p>
@@ -190,10 +190,76 @@
                             <h4 class="hd">&nbsp;</h4>
                         </div>
                     </div>
+                    <div class="tabInner tab2" style="height:270px;">
+                        <div class="box">
+                            <div class="box_1">
+                                <h3>
+                                    <span class="text">用户评论</span>
+                                    （共
+                                        <font class="f1">0</font>
+                                    条评论）
+                                </h3>
+                                <div class="boxCenterList clearfix">
+                                    <ul class="comments">
+                                        <li>暂时还没有任何用户评论</li>
+                                    </ul>
+                                    <div id="pagebar" class="f_r">
+                                        <form name="selectPageForm" action="/goods.php" method="get">
+                                            <div id="pager">总计 0 个记录，共 1 页。 
+                                                <span> <a href="">第一页</a> <a href="javascript:;">上一页</a> <a href="javascript:;">下一页</a> <a href="javascript:;">最末页</a> </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="blank5"></div>
+                                    <div class="commentsList">
+                                        <form action=""  method="post" name="commentForm" id="commentForm">
+                                            <table width="710" border="0" cellspacing="5" cellpadding="0">
+                                             <tbody><tr>
+                                               <td width="64" align="right">用户名：</td>
+                                               <td width="631">匿名用户</td>
+                                             </tr>
+                                             <tr>
+                                               <td align="right">E-mail：</td>
+                                               <td>
+                                               <input type="text" name="email" id="email" maxlength="100" value="" class="inputBorder">
+                                               </td>
+                                             </tr>
+                                             <!-- <tr>
+                                               <td align="right">评价等级：</td>
+                                               <td>
+                                               <input name="comment_rank" type="radio" value="1" id="comment_rank1"> <img src="themes/tonlion/images/stars1.gif">
+                                               <input name="comment_rank" type="radio" value="2" id="comment_rank2"> <img src="themes/tonlion/images/stars2.gif">
+                                               <input name="comment_rank" type="radio" value="3" id="comment_rank3"> <img src="themes/tonlion/images/stars3.gif">
+                                               <input name="comment_rank" type="radio" value="4" id="comment_rank4"> <img src="themes/tonlion/images/stars4.gif">
+                                               <input name="comment_rank" type="radio" value="5" checked="checked" id="comment_rank5"> <img src="themes/tonlion/images/stars5.gif">
+                                               </td>
+                                             </tr> -->
+                                             <tr>
+                                               <td align="right" valign="top">评论内容：</td>
+                                               <td>
+                                               <textarea name="content" class="inputBorder" style="height:50px; width:620px;"></textarea>
+                                               <input type="hidden" name="cmt_type" value="">
+                                               <input type="hidden" name="id" value="9449">
+                                               </td>
+                                             </tr>
+                                             <tr>
+                                               <td colspan="2">
+                                                         <input name="" type="submit" value="" class="f_r" style="border:none; background:url(../images/commentsbnt.gif); width:75px; height:21px; margin-right:8px;">
+                                               </td>
+                                             </tr>
+                                           </tbody></table>
+                                           </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blank5"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <iframe src="foot.html" width="1280" height="281" ></iframe>
+    <script src="../js/detail.js"></script>
 </body>
 </html>
