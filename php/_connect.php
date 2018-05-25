@@ -8,6 +8,8 @@
       // 检测连接
       if ($conn->connect_error) {
           die("连接失败: " . $conn->connect_error);
+      }else{
+        //   echo "连接成功";
       }
     //   echo "连接成功";
 ?>

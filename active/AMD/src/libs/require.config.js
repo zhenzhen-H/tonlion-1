@@ -1,0 +1,10 @@
+requirejs.config({
+    baseUrl:"src",
+    paths:{
+        "jquery":"libs/jquery-3.3.1",
+        "pop":"model/pop",
+        "rb":"model/randomBg",
+        "cookie":"model/cookiehd",
+        "jqueryCookie":"libs/jquery.cookie"
+    }
+})

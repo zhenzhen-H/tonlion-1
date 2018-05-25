@@ -19,36 +19,42 @@ $(function(){
 			this.small_ele.on("mousemove.bigMove",$.proxy(this.bigMove,this));
 			// this.small_ele.on("mousewheel",$.proxy(this.ratio,this));
 
-			this.small_ele[0].onmousewheel = function(event){
-				//谷歌;
-				var evt = event || window.event;
-				// console.log(evt.wheelDelta);
-				//传参调用 ratio => 传入 谷歌 | 当前实现对象里的事件信息;
-				this.ratio("ch",evt.wheelDelta);
-			}.bind(this);
-			this.small_ele[0].addEventListener("DOMMouseScroll",function(event){
-				// console.log(event.detail);
-				this.ratio("ff",event.detail);
-			}.bind(this));
+			// this.small_ele[0].onmousewheel = function(event){
+			// 	//谷歌;
+			// 	var evt = event || window.event;
+			// 	// console.log(evt.wheelDelta);
+			// 	//传参调用 ratio => 传入 谷歌 | 当前实现对象里的事件信息;
+			// 	this.ratio("ch",evt.wheelDelta);
+			// }.bind(this);
+			// this.small_ele[0].addEventListener("DOMMouseScroll",function(event){
+			// 	// console.log(event.detail);
+			// 	this.ratio("ff",event.detail);
+			// }.bind(this));
 			
 		},
+		//设置小灰框和大图的显示和隐藏
 		toggleFocus(event){
 			var opacity_img = this.small_ele.find(".opacity-img");
-			// console.log(opacity_img);
+			var grayBox=this.focus_ele;
+			// console.log(grayBox);
 			if(event.data.hidden){
 				this.focus_ele.stop().fadeOut(200);
 				this.big_ele.stop().fadeOut(200);
-				opacity_img.stop().fadeTo("fast",1);
+				// opacity_img.stop().fadeTo("fast",1);
+				// grayBox.stop().fadeTo("fast",1);
+				grayBox.removeClass("gray");
 			}else{
 				this.focus_ele.stop().fadeIn(200);
 				this.big_ele.stop().fadeIn(200);
-				opacity_img.stop().fadeTo("fast",0.3);
+				// opacity_img.stop().fadeTo("fast",0.5);
+				grayBox.stop().fadeTo("fast",0.5);
+				grayBox.addClass("gray");
 			}
 		},
 		smallMove(event){
 			var eleX = event.offsetX-this.focus_ele.width()/2;
 			var eleY = event.offsetY-this.focus_ele.height()/2;
-			// console.log(eleX,eleY);
+			console.log(eleX,eleY);
 			// 边界检测;
 			var maxWidth = this.small_ele.width() - this.focus_ele.width();
 			var maxHeight = this.small_ele.height() - this.focus_ele.height();
@@ -58,7 +64,8 @@ $(function(){
 			
 			eleY = eleY <= 0 ? 0 : eleY;
 			eleY = eleY >= maxHeight ?  maxHeight : eleY;
-
+			
+			
 			this.focus_ele.css({
 				left:eleX,
 				top:eleY,

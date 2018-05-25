@@ -110,6 +110,35 @@
     height:380px;
     border:none;
 }
+.big{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	left:400px;
+	top: 0px;
+	border:1px solid #f10;
+	display: none;
+    overflow: hidden;
+    z-index:10;
+}
+.big img{
+	position: absolute;
+}
+.grayBox{
+    display: none;
+    width:80%;
+    height:80%;
+    background-size:400px 400px;
+    background-position: 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left:0;
+    top:0;
+    
+}
+.gray{
+    background: #ddd;
+}
 #thumblist{
     margin-left:10px;
 }

@@ -1,0 +1,540 @@
+@charset "utf-8";
+/*shortCut*/
+#shortCut{
+    width:100%;
+    height:31px;
+    /* background: #333377; */
+    background: #f1f1f1;
+}
+.shortCut1{
+    width:990px;
+    height:30px;
+    margin:0 auto;
+    background: #f1f1f1;
+    /* background: lightcyan; */
+}
+.fl{
+    width:97px;
+    height:30px;
+    float:left;
+    /* background: bisque; */
+}
+.fl li .fl-li-div1{
+    position: relative;
+    float: left;
+    width:97px;
+    height:30px;
+    line-height: 30px;
+}
+.i-right{
+    position: absolute;
+    float: left;
+    top:10px;
+    
+    height:7px;
+    overflow: hidden;
+    font:400 15px/15px consolas;
+    transition: transform .1s ease-in 0s;
+}
+.i-right s{
+    width:15px;
+    height:15px;
+}
+
+.fr{
+    width:798px;
+    height:30px;
+    float:right;
+    /* background: aquamarine; */
+
+}
+.fr li{
+    float:left;
+    line-height: 30px;
+    text-align: center;
+}
+
+.fr .fr-li1{
+    width:131px;
+    height:30px;
+    margin-right:10px;
+}
+.fr .fr-li1 .reg{
+    color:#c81623;
+    width:48px;
+}
+.fr .fr-li2{
+    width:68px;
+    height:30px;
+}
+.fr .fr-li3{
+    width:86px;
+    height:30px;
+}
+.fr .fr-li4{
+    width:68px;
+    height:30px;
+}
+.fr .fr-li5{
+    width:68px;
+    height:30px;
+}
+.fr .fr-li6{
+    width:102px;
+    height:30px;
+}
+.fr .fr-li7{
+    width:86px;
+    height:30px;
+}
+.fr .fr-li8{
+    width:86px;
+    height:30px;
+}
+.fr .fr-li9{
+    width:85px;
+    height:30px;
+}
+.fr  .spacer{
+    margin-top:9px;
+    width:1px;
+    height:12px;
+    background: #CCC;   
+
+}
+
+
+
+/*header*/
+#header{
+    width:100%;
+    height:100px;
+    background: white;
+}
+
+.header1{
+    width:990px;
+    height:100px;
+    /* background: peachpuff; */
+    margin:0 auto;
+    position: relative;
+}
+.logo{
+    width:362px;
+    height:100px;
+    background: url(../images/jdlogo-201708-@1x.png) no-repeat 0 0;
+    float: left;
+    z-index: 2;
+    margin-top:20px;
+}
+.logo a{
+    width:270px;
+    height:60px;
+    
+    display: inline-block;
+}
+
+.search-form{
+    position: relative;
+    float: left;
+    width:462px;
+    height:36px;
+    margin-top:25px;
+    background:white;
+    
+    padding:0;
+    border:0;
+    /* margin-top:35px; */
+}
+.search-form-text{
+    float: left;
+    width:370px;
+    height:24px;
+    line-height: 24px;
+    color:#666;
+    padding:4px;
+    margin-bottom:4px;
+    border-width:2px 0 2px 2px;
+    border-color: #b61d1d;
+    border-style:solid;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    /* background:lightblue; */
+}
+
+.search-btn{
+    width:82px;
+    height:36px;
+    float:left;
+    border:none;
+    background:#b61d1d;
+    font-size:16px;
+    font-family: "Microsoft YaHei";
+    color:white;
+    text-align: center;
+}
+.shoppingCart{
+    margin-top:25px;
+    width:141px;
+    height:35px;
+    float:right;
+    background: #f9f9f9;
+    line-height: 35px;
+    text-align: center;
+    position:relative;
+    
+}
+.cart-icon{
+    position: absolute;
+    left:35px;
+    top:8px;
+    width:16px;
+    height:16px;
+    margin-right:3px;
+    /* background: url(../images/cart_09.jpg) no-repeat; */
+}
+.cart-li1{
+    margin:0 auto;
+    text-align: center;
+    color:#666666;
+    width:60px;
+    height:16px;
+    line-height: 16px;
+}
+.hotwords{
+    width:462px;
+    height:20px;
+    float: left;
+    /* background:khaki; */
+
+}
+.hotwords a{
+    text-align: center;
+    height:20px;
+    line-height: 20px;
+    margin-right:10px;
+    color:#666;
+}
+.hotwords a:hover{
+    color: #c81623;
+}
+.hotwords .hotw-a1{
+    color: #c81623;
+}
+
+/*nav*/
+#nav{
+    height:44px;
+    width:100%;
+    border-bottom:2px solid #B1191A;
+}
+.nav1{
+    width:990px;
+    height:44px;
+    margin:0 auto;
+    /* background: lightskyblue; */
+    position: relative;
+}
+#catagorys-2014{
+    /* float:left; */
+    position: absolute;
+    left:0;
+    z-index:10;
+    width:210px;
+    height:44px;
+    overflow: visible;
+    background: #B1191A;
+}
+#catagorys-2014 .dt a{
+    display: block;
+    width:190px;
+    height:44px;
+    padding:0 10px;
+    background: #B1191A;
+    font:400 15px/44px "microsoft yahei";
+    color:#fff;
+    text-decoration: none;
+}
+#navitems-2014{
+    float: left;
+    position: absolute;
+    padding-left:210px;
+    z-index:2;
+    width:620px;
+    height:44px;
+    top:0;
+}
+#navitems-2014 ul{
+    float: left;
+    height:44px;    
+}
+#navitems-2014 ul li{
+    float: left;
+}
+#navitems-2014 ul li:hover a{
+    color:#B1191A;
+}
+.navitems-group1{
+    width:325px;
+
+}
+.navitems-group2{
+    width:295px;
+}
+#navitems-2014 a{
+    height:44px;
+    padding:0 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size:15px;
+    line-height:44px;
+    font-weight: 400;
+    color:#333;
+}
+
+.d-layout-area{
+    /* margin:0 auto; */
+    width:100%;
+}
+ .userDefinedArea img{
+    width:100%;
+    margin: 0 auto;
+    /* overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    justify-content:center; */
+}
+.userDefinedArea{
+    width:100%;
+    margin:0 auto;
+}
+img{
+    vertical-align: bottom;
+}
+.d-layout-area{
+    width:100%;
+    margin:0 auto;
+    background:url(../images/5afbe303nc63e9ef6.jpg) repeat-x ;
+    /* background: navajowhite; */
+}
+.mc{
+    margin:0 auto;
+    background:url(../images/5afbe303nc63e9ef6.jpg) no-repeat;
+    width:990px;
+    height:329px;
+}
+.mc ul li{
+    float:left;
+    width:236px;
+    padding:6px 0 3px 9px;
+    overflow: hidden;
+    display: inline;
+    position: relative;
+}
+.jItem{
+    height:310px;
+    border:5px solid #fff;
+    padding-top:0;
+    background: #fff;
+    transition:all .3s ease-in;
+}
+.jItem:hover{
+    border:5px solid #cf112c;
+    background: #cf112c;
+}
+.jItem:hover .jDesc{   
+    color:#fff;
+}
+.jItem:hover .jTop{
+    background: #fff;
+}
+.jTop{
+    height:265px;  
+    background: #fff;
+    margin:0 auto;
+    border-bottom:solid 1px #cf112c;
+}
+.jPic{
+    text-align: center;
+    background: #fff;
+    padding-top:20px;
+}
+.jPic a{
+    padding:0;
+    display: block;
+}
+.jPic img{
+    vertical-align: top;
+    width:190px;
+    height:190px;
+    margin:0 auto;
+}
+.jPrice{
+    margin-top:0;
+    height:30px;
+    font-weight: bold;
+    text-align: center;
+    font-family:"impact", "微软雅黑", "宋体";
+    font-size:26px;
+    color:#c00404;
+    line-height:1.2;
+    background: #fff;
+}
+.jDesc{
+    height:32px;
+    font-size: 13px;
+    overflow: hidden;
+    padding:0 5px;
+    line-height: 1.2;
+    margin-top:3px;
+}
+.jSlogan{
+    color:#ff7403;
+    height:16px;
+    line-height:1.5;
+    font-size:13px;
+    overflow: hidden;
+    padding:3px 5px;
+    background: #fff;
+}
+.jSlogan a{
+    color:#ff7403; 
+}
+.jDesc{
+    height:32px;
+    font-size:13px;
+    overflow: hidden;
+    padding:0 5px;
+    line-height:1.2;
+    margin-top:3px;
+}
+.d-price-tips em{
+    vertical-align: middle;
+    display: inline-block;
+
+}
+.d-price-tips{
+    padding:20px 0;
+    text-align: center;
+    font-size:14px;
+    line-height: 16px;
+}
+#service-2014{
+    margin-bottom: 20px;
+
+}
+.w{
+    width:990px;
+    margin:0 auto;
+}
+#service-2014 .slogen{
+    position: relative;
+    height:54px;
+    padding:20px 0;
+    margin-bottom:14px;
+    background: #f5f5f5;
+    text-align:center;
+}
+#service-2014 .slogen .fore1{
+    margin-left:-490px;
+}
+#service-2014 .slogen .item{
+    display: inline-block;
+    position: absolute;
+    left:50%;
+    top:20px;
+    width:245px;
+    height:54px;
+    text-align: left;
+    vertical-align: middle;
+    font:400 18px/50px "microsoft yahei";
+}
+#service-2014 .slogen .fore1 i{
+    background: url(http://misc.360buyimg.com/jdf/1.0.0/unit/service/1.0.0/i/service_items_1.png);
+}
+#service-2014 .slogen .fore2{
+    margin-left: -245px;
+}
+#service-2014 .slogen .fore2 i{
+    background: url(http://misc.360buyimg.com/jdf/1.0.0/unit/service/1.0.0/i/service_items_1.png);
+}
+#service-2014 .slogen .fore3{
+    margin-left: 0;
+}
+#service-2014 .slogen .fore3 i{
+    background: url(http://misc.360buyimg.com/jdf/1.0.0/unit/service/1.0.0/i/service_items_1.png);
+}
+#service-2014 .slogen .fore4{
+    margin-left: 245px;
+}
+#service-2014 .slogen .fore4 i{
+    background: url(http://misc.360buyimg.com/jdf/1.0.0/unit/service/1.0.0/i/service_items_1.png);
+}
+#service-2014 .slogen .item i{
+    display: block;
+    position: absolute;
+    top:0;
+    left:10px;
+    width:220px;
+    height:54px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+i{
+    font-weight:normal;
+    font-weight: 500;
+}
+.x{
+    height:156px;
+}
+#service-2014 dl{
+    float:left;
+    width:200px;
+}
+#service-2014 dt{
+    padding:6px 0;
+    font:400 16px/24px "microsoft yahei";
+}
+#service-2014 dd{
+    line-height:20px;
+}
+#service-2014 dd div a:hover{
+    color:#c00404;
+}
+#service-2014 .fore5{
+    width:100px;
+}
+a{
+    color:#666;
+    text-decoration: none;
+}
+.mod1{
+    margin:0 10px;
+    color:#ccc;
+}
+.copyrights1{
+    border-top:1px solid #ccc;
+}
+.links{
+    padding-top:20px;
+    text-indent: 20px;
+}
+.copyright{
+    margin:20px 0;
+    text-align: center;
+}
+.copyright p{
+    margin:10px 0;
+}
+.mod_a{
+    overflow: hidden;
+    display: inline-block;
+    margin:3px;
+    width:103px;
+    height:32px;
+    background-position: -205px -148px;
+    background: url(http://misc.360buyimg.com/mtd/pc/index_2017/2.0.3/static/images/sprite.footer.png)no-repeat;
+}
